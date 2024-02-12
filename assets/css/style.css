@@ -9,6 +9,9 @@
   --db-font_dark: rgba(33, 37, 41, 1);
 }
 
+._bg_primary {
+  background-color: var(--db-primary);
+}
 
 /* #endregion ||||| UTILITIES RULES ||||| */
 
@@ -41,10 +44,8 @@
   }
 
   #site_main {
-    background-color: var(--db-bg_light);
 
     ._nav_menu {
-      background-color: var(--db-primary);
       height: 90vh;
     }
 
@@ -84,7 +85,13 @@
 
 /* #region ||||| COMMON RULES ||||| */
 
+ul {
+  list-style: none;
 
+  a {
+    text-decoration: none;
+  }
+}
 
 /* #endregion ||||| COMMON RULES ||||| */
 
