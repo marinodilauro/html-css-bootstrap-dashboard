@@ -30,12 +30,31 @@
 <body class="debug">
 
   <!-- Header -->
-  <header id="site_header" class="d-flex justify-content-center align-items-center">
+  <header id="site_header" class="d-flex justify-content-center">
 
-    <div class="container-fluid d-flex">
-      <div class="_logo"></div>
-      <div class="_search_bar"></div>
-      <div class="_header_menu"></div>
+    <div class="container-fluid d-flex align-items-center">
+
+      <div class="_logo d-flex align-items-center">
+        <img class="d-none d-lg-block img-fluid" src="./assets/img/logo.svg" alt="">
+        <img class="_mobile_logo d-lg-none img-fluid" src="./assets/img/mobile-logo.png" alt="">
+      </div>
+
+      <div class="_search d-flex align-items-center px-4">
+        <div class="_search_bar rounded d-flex align-items-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+        </div>
+      </div>
+
+      <div class="_header_menu">
+        <ul class="d-flex justify-content-evenly p-0 m-0">
+          <li class="d-none d-lg-block px-3"><a href="#"><i class="fa-solid fa-list"></i></a></li>
+          <li class="d-none d-lg-block px-3"><a href="#"><i class="fa-solid fa-circle-question"></i></a></li>
+          <li class="d-none d-lg-block px-3"><a href="#"><i class="fa-solid fa-lg fa-ellipsis-vertical"></i></a></li>
+          <li class="ps-3"><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+        </ul>
+      </div>
+
     </div>
 
   </header>
