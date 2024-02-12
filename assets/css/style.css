@@ -21,65 +21,48 @@
 /* #region ||||| DEBUG RULES ||||| */
 
 .debug {
-
+  /* 
   #site_header {
-    /* background-color: lightcyan; */
-    height: 10vh;
 
-    ._logo {
-      height: 70px;
-    }
+    background-color: lightcyan;
 
     ._search {
-      width: 90%;
-      /* background-color: lightblue; */
+
+      background-color: lightblue;
     }
 
     ._logo,
     ._header_menu {
-      flex-grow: 1;
-      /* background-color: lightskyblue; */
-      /* min-width: 80px; */
+
+      background-color: lightskyblue;
+      min-width: 80px;
     }
-  }
+  } */
 
   #site_main {
 
-    ._nav_menu {
-      height: 90vh;
-    }
+    ._dashboard_body {
+      background-color: var(--db-bg_light);
 
-    ._dashboard {
-      height: 90vh;
-      overflow-y: auto;
-
-      ._dashboard_top {
-        background-color: var(--db-secondary);
-        height: 150px;
+      ._next_classes {
+        height: 450px;
       }
 
-      ._dashboard_body {
-        background-color: var(--db-bg_light);
+      ._faq {
+        height: 250px;
+      }
 
-        ._next_classes {
-          height: 450px;
-        }
+      ._todo {
+        height: 200px;
+      }
 
-        ._faq {
-          height: 250px;
-        }
-
-        ._todo {
-          height: 200px;
-        }
-
-        ._analytics {
-          height: 600px;
-        }
+      ._analytics {
+        height: 600px;
       }
     }
   }
 }
+
 
 /* #endregion ||||| DEBUG RULES ||||| */
 
@@ -104,13 +87,20 @@ ul {
 /* #region ||||| HEADER RULES ||||| */
 
 #site_header {
+  height: 8vh;
   background-color: var(--db-bg_lighter);
 
+  ._logo {
+    height: 70px;
+    flex-grow: 1;
+  }
+
   ._mobile_logo {
-    max-height: 100%;
+    max-height: 70%;
   }
 
   ._search {
+    width: 90%;
     height: 50px;
 
     ._search_bar {
@@ -133,6 +123,7 @@ ul {
   }
 
   ._header_menu {
+    flex-grow: 1;
 
     ul {
 
@@ -152,12 +143,25 @@ ul {
 /* #region ||||| MAIN RULES ||||| */
 
 #site_main {
-
   ._nav_menu {
+    height: 92vh;
+    max-width: 150px;
+    min-width: 60px;
 
     a {
       text-decoration: none;
       color: var(--db-font_light);
+    }
+  }
+
+  ._dashboard {
+    height: 92vh;
+    width: 100vw;
+    overflow-y: auto;
+
+    ._dashboard_top {
+      background-color: var(--db-secondary);
+      height: 150px;
     }
 
   }
