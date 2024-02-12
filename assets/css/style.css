@@ -19,12 +19,12 @@
 
   #site_header {
     background-color: lightcyan;
+    height: 10svh;
 
     ._logo,
     ._search_bar,
     ._header_menu {
-      height: 80px;
-
+      height: 70px;
     }
 
     ._search_bar {
@@ -37,6 +37,44 @@
       flex-grow: 1;
       background-color: lightskyblue;
       min-width: 80px;
+    }
+  }
+
+  #site_main {
+    background-color: var(--db-bg_light);
+
+    ._nav_menu {
+      background-color: var(--db-primary);
+      height: 90vh;
+    }
+
+    ._dashboard {
+      height: 90vh;
+
+      ._dashboard_top {
+        background-color: var(--db-secondary);
+        height: 150px;
+      }
+
+      ._dashboard_body {
+        background-color: var(--db-bg_light);
+
+        ._next_classes {
+          height: 450px;
+        }
+
+        ._faq {
+          height: 250px;
+        }
+
+        ._todo {
+          height: 200px;
+        }
+
+        ._analytics {
+          height: 600px;
+        }
+      }
     }
   }
 }
