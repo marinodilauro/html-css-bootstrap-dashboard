@@ -1,0 +1,58 @@
+/* #region ||||| UTILITIES RULES ||||| */
+
+:root {
+  --db-primary: rgba(5, 30, 52, 1);
+  --db-secondary: rgba(27, 114, 232, 1);
+  --db-bg_light: rgba(247, 247, 247, 1);
+  --db-bg_lighter: rgba(255, 255, 255, 1);
+  --db-font_light: rgba(255, 255, 255, 1);
+  --db-font_dark: rgba(33, 37, 41, 1);
+}
+
+
+/* #endregion ||||| UTILITIES RULES ||||| */
+
+
+/* #region ||||| DEBUG RULES ||||| */
+
+.debug {
+
+  #site_header {
+    background-color: lightcyan;
+
+    ._logo,
+    ._search_bar,
+    ._header_menu {
+      height: 80px;
+
+    }
+
+    ._search_bar {
+      width: 80%;
+      background-color: lightblue;
+    }
+
+    ._logo,
+    ._header_menu {
+      flex-grow: 1;
+      background-color: lightskyblue;
+      min-width: 80px;
+    }
+  }
+}
+
+/* #endregion ||||| DEBUG RULES ||||| */
+
+
+/* #region ||||| COMMON RULES ||||| */
+
+
+
+/* #endregion ||||| COMMON RULES ||||| */
+
+
+/* #region ||||| MAIN RULES ||||| */
+
+
+
+/* #endregion ||||| MAIN RULES ||||| */
