@@ -151,6 +151,16 @@ ul {
 
 /* #region ||||| MAIN RULES ||||| */
 
+#site_main {
 
+  ._nav_menu {
+
+    a {
+      text-decoration: none;
+      color: var(--db-font_light);
+    }
+
+  }
+}
 
 /* #endregion ||||| MAIN RULES ||||| */
