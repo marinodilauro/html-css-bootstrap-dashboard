@@ -59,57 +59,75 @@
 
   </header>
 
-  <!-- Main -->
-  <main id="site_main">
+  <!-- App -->
 
+  <div class="_app d-flex">
 
-    <div class="container-fluid d-flex p-0">
+    <div class="_sidebar _bg_primary d-flex flex-column justify-content-between align-items-center p-2">
+      <ul class="ps-0 m-0 py-3">
+        <li class="pb-3"><a class="d-flex align-items-baseline gap-3 px-3" href="#"><i
+              class="fa-solid fa-house"></i><span class="d-none d-lg-inline">Home</span></a></li>
+        <li class="pb-3"><a class="d-flex align-items-baseline gap-3 px-3" href="#"><i
+              class="fa-solid fa-chart-simple pe-1"></i><span class="d-none d-lg-inline">Stats</span></a>
+        </li>
+        <li class="pb-3"><a class="d-flex align-items-baseline gap-3 px-3" href="#"><i
+              class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span></a>
+        </li>
+      </ul>
+      <a class="d-flex align-items-baseline gap-3 p-3" href="#"><i class="fa-solid fa-gear"></i><span
+          class="d-none d-lg-inline">Admin</span></a>
+    </div>
 
-      <!-- <div class="col-2 col-lg-1"> -->
-      <aside class="_nav_menu _bg_primary d-flex flex-column justify-content-between align-items-center p-2">
-        <ul class="ps-0 m-0 py-3">
-          <li class="pb-3"><a class="d-flex align-items-baseline gap-3 px-3" href="#"><i
-                class="fa-solid fa-house"></i><span class="d-none d-lg-inline">Home</span></a></li>
-          <li class="pb-3"><a class="d-flex align-items-baseline gap-3 px-3" href="#"><i
-                class="fa-solid fa-chart-simple pe-1"></i><span class="d-none d-lg-inline">Stats</span></a>
-          </li>
-          <li class="pb-3"><a class="d-flex align-items-baseline gap-3 px-3" href="#"><i
-                class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span></a>
-          </li>
-        </ul>
-        <a class="d-flex align-items-baseline gap-3 p-3" href="#"><i class="fa-solid fa-gear"></i><span
-            class="d-none d-lg-inline">Admin</span></a>
-      </aside>
-      <!-- </div> -->
+    <div class="_dashboard">
 
-      <!-- <div class="col-10 col-lg-11"> -->
-      <div class="_dashboard">
+      <div class="_dashboard_top py-4 px-2">
 
-        <div class="_dashboard_top"></div>
+        <div class="_add_new_student">
+          <span>Nuovo Studente</span>
+          <button type="button" class="btn btn-outline-light">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
 
-        <div class="_dashboard_body">
-          <div class="container-fluid">
-            <div class="row pt-4 px-1">
+        <div class="_plan">
+          <div class="d-flex align-items-center gap-2">
+            <h1>Boolean</h1> <span class="badge _bg_secondary_dark rounded-pill fw-normal">Piano blaze</span>
+          </div>
 
-              <div class="col-12 col-lg-8">
-                <div class="card _next_classes mb-4"></div>
-                <div class="card _faq mb-4"></div>
-              </div>
+          <div>
+            <span class="badge _bg_secondary_dark rounded-pill fw-normal">3 app</span>
+            <i class="fa-solid fa-angles-right"></i>
+            <span class="badge _bg_secondary_dark rounded-pill fw-normal d-none d-lg-inline">Boolean mobile app</span>
+            <span class="badge _bg_secondary_dark rounded-pill fw-normal d-none d-lg-inline">Boolean web app</span>
+            <span class="badge _bg_secondary_dark rounded-pill fw-normal d-none d-lg-inline">Boolean blog app</span>
+            <span class="badge _bg_secondary_dark rounded-pill fw-normal d-lg-none">+</span>
+          </div>
 
-              <div class="col-12 col-lg-4">
-                <div class="card _todo mb-4"></div>
-                <div class="card _analytics mb-4"></div>
-              </div>
+        </div>
 
+      </div>
+
+      <div class="_dashboard_body">
+        <div class="container-fluid">
+          <div class="row pt-4 px-1">
+
+            <div class="col-12 col-lg-8">
+              <div class="card _next_classes mb-4"></div>
+              <div class="card _faq mb-4"></div>
             </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="card _todo mb-4"></div>
+              <div class="card _analytics mb-4"></div>
+            </div>
+
           </div>
         </div>
       </div>
-      <!-- </div> -->
+
     </div>
 
-
-  </main>
+  </div>
 
 </body>
 

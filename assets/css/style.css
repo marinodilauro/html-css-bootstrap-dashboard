@@ -3,6 +3,7 @@
 :root {
   --db-primary: rgba(5, 30, 52, 1);
   --db-secondary: rgba(27, 114, 232, 1);
+  --db-secondary_dark: rgba(22, 91, 186, 1);
   --db-bg_light: rgba(247, 247, 247, 1);
   --db-bg_lighter: rgba(255, 255, 255, 1);
   --db-font_light: rgba(255, 255, 255, 1);
@@ -13,6 +14,10 @@
 
 ._bg_primary {
   background-color: var(--db-primary);
+}
+
+._bg_secondary_dark {
+  background-color: var(--db-secondary_dark);
 }
 
 /* #endregion ||||| UTILITIES RULES ||||| */
@@ -39,7 +44,7 @@
     }
   } */
 
-  #site_main {
+  ._app {
 
     ._dashboard_body {
       background-color: var(--db-bg_light);
@@ -70,7 +75,9 @@
 /* #region ||||| COMMON RULES ||||| */
 
 body {
+  height: 100vh;
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -87,7 +94,7 @@ ul {
 /* #region ||||| HEADER RULES ||||| */
 
 #site_header {
-  height: 8vh;
+  height: 70px;
   background-color: var(--db-bg_lighter);
 
   ._logo {
@@ -140,13 +147,15 @@ ul {
 
 /* #endregion ||||| HEADER RULES ||||| */
 
-/* #region ||||| MAIN RULES ||||| */
+/* #region ||||| APP RULES ||||| */
 
-#site_main {
-  ._nav_menu {
-    height: 92vh;
+._app {
+  height: calc(100% - 70px);
+
+  ._sidebar {
     max-width: 150px;
     min-width: 60px;
+    height: 100%;
 
     a {
       text-decoration: none;
@@ -155,16 +164,18 @@ ul {
   }
 
   ._dashboard {
-    height: 92vh;
-    width: 100vw;
+    flex-grow: 1;
+    height: 100%;
     overflow-y: auto;
 
     ._dashboard_top {
       background-color: var(--db-secondary);
       height: 150px;
+      color: var(--db-font_light);
+
     }
 
   }
 }
 
-/* #endregion ||||| MAIN RULES ||||| */
+/* #endregion ||||| APP RULES ||||| */
