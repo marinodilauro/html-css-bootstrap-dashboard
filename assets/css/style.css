@@ -10,6 +10,7 @@
   --db-font_dark: rgba(33, 37, 41, 1);
   --db-search_bar: rgba(229, 229, 229, 1);
   --db-bell: rgba(255, 143, 0, 1);
+  --db-table_icon_bg: rgba(242, 101, 81, 1);
 }
 
 ._bg_primary {
@@ -20,13 +21,20 @@
   background-color: var(--db-secondary_dark);
 }
 
+._icon_bg {
+  width: 30px;
+  height: 30px;
+  padding: 0.3rem;
+  background-color: var(--db-table_icon_bg);
+}
+
 /* #endregion ||||| UTILITIES RULES ||||| */
 
 
 /* #region ||||| DEBUG RULES ||||| */
 
-.debug {
-  /* 
+/* .debug {
+   
   #site_header {
 
     background-color: lightcyan;
@@ -42,31 +50,31 @@
       background-color: lightskyblue;
       min-width: 80px;
     }
-  } */
+  } 
 
   ._app {
 
     ._dashboard_body {
-
+       
 
       ._next_classes {
         height: 450px;
-      }
+      } 
 
-      /* ._faq {
+       ._faq {
         height: 250px;
-      } */
-      /* 
+      } 
+       
       ._todo {
         height: 200px;
-      } */
+      } 
 
-      /* ._analytics {
+       ._analytics {
         height: 600px;
-      } */
+      }
     }
   }
-}
+} */
 
 
 /* #endregion ||||| DEBUG RULES ||||| */
@@ -188,6 +196,7 @@ ul {
     }
 
     ._dashboard_body {
+
 
       ._faq {
 
