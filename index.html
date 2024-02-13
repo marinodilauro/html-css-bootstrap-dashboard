@@ -80,21 +80,22 @@
 
     <div class="_dashboard">
 
-      <div class="_dashboard_top py-4 px-2">
+      <div class="_dashboard_top d-md-flex py-4 ps-3 pe-5 gap-5">
 
-        <div class="_add_new_student">
+        <div class="_add_new_student pb-3 flex-grow-1 order-last">
           <span>Nuovo Studente</span>
-          <button type="button" class="btn btn-outline-light">
+          <button type="button" class="btn btn-outline-light ms-3">
             <i class="fa-solid fa-plus"></i>
           </button>
         </div>
 
-        <div class="_plan">
+        <div class="_plan order-first flex-fill pb-3">
           <div class="d-flex align-items-center gap-2">
-            <h1>Boolean</h1> <span class="badge _bg_secondary_dark rounded-pill fw-normal">Piano blaze</span>
+            <span class="fs-2">Boolean</span> <span class="badge _bg_secondary_dark rounded-pill fw-normal">Piano
+              blaze</span>
           </div>
 
-          <div>
+          <div class="d-flex align-items-center gap-1">
             <span class="badge _bg_secondary_dark rounded-pill fw-normal">3 app</span>
             <i class="fa-solid fa-angles-right"></i>
             <span class="badge _bg_secondary_dark rounded-pill fw-normal d-none d-lg-inline">Boolean mobile app</span>
@@ -103,6 +104,11 @@
             <span class="badge _bg_secondary_dark rounded-pill fw-normal d-lg-none">+</span>
           </div>
 
+        </div>
+
+        <div class="_online_students_counter text-start flex-fill">
+          <p class="m-0">Studenti online negli ultimi 30 minuti</p>
+          <span class="fs-2">125</span>
         </div>
 
       </div>
