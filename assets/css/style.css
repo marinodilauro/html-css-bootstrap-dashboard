@@ -141,7 +141,7 @@ ul {
     }
   }
 
-  ._header_menu {
+  .navbar {
     flex-grow: 1;
 
     ul {
