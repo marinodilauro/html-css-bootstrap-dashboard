@@ -47,15 +47,15 @@
   ._app {
 
     ._dashboard_body {
-      background-color: var(--db-bg_light);
+
 
       ._next_classes {
         height: 450px;
       }
 
-      ._faq {
+      /* ._faq {
         height: 250px;
-      }
+      } */
 
       ._todo {
         height: 200px;
@@ -170,6 +170,7 @@ ul {
     flex-grow: 1;
     height: 100%;
     overflow-y: auto;
+    background-color: var(--db-bg_light);
 
     ._dashboard_top {
       background-color: var(--db-secondary);
@@ -182,6 +183,24 @@ ul {
       ._plan {
         .badge {
           font-size: 0.9rem;
+        }
+      }
+    }
+
+    ._dashboard_body {
+
+      ._faq {
+
+        .accordion {
+
+          div:nth-child(3) {
+            .accordion-body {
+
+              span {
+                text-decoration: line-through;
+              }
+            }
+          }
         }
       }
     }
