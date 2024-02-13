@@ -11,6 +11,7 @@
   --db-search_bar: rgba(229, 229, 229, 1);
   --db-bell: rgba(255, 143, 0, 1);
   --db-table_icon_bg: rgba(242, 101, 81, 1);
+  --db-sidebar_link_hover_bg: rgba(185, 185, 185, 0.5);
 }
 
 ._bg_primary {
@@ -174,6 +175,14 @@ ul {
     }
   }
 
+  ._sidebar {
+
+    a:hover {
+      background-color: var(--db-sidebar_link_hover_bg);
+      border-radius: 4px;
+    }
+  }
+
   ._dashboard {
     flex-grow: 1;
     height: 100%;
@@ -186,6 +195,17 @@ ul {
 
       ._add_new_student {
         min-width: 180px;
+      }
+
+      .offcanvas {
+
+        @media screen and (max-width:991px) {
+          width: 100%;
+        }
+
+        @media screen and (min-width:992px) {
+          width: 50%;
+        }
       }
 
       ._plan {
@@ -213,7 +233,6 @@ ul {
         }
       }
     }
-
   }
 }
 
